@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: whitesmoke;
-    padding: 100px;
 }
 
 .intro {
@@ -22,13 +21,13 @@ body {
     margin: 10px 0 5px;
     color: #000000;
     font-size: 50px;
-
 }
 
 .tagline {
     font-weight: bold;
     color: black;
-    font-size: 30px;
+    font-size: 28px;
+    margin: 50px 0 30px;
 }
 
 .bio {
@@ -45,7 +44,29 @@ body {
     text-decoration: none;
     border-radius: 50px;
     font-size: 18px;
-    margin-top: 50px;
-
+    margin-top: 20px;
 }
 
+#about {
+    margin-top: 390px;
+    background-color: whitesmoke;
+    font-size: 25px;
+    padding: 40px;
+}
+
+#about h2 {
+    margin-bottom: 25px; 
+}
+
+#about h3 {
+    margin-top: 40px;   
+    margin-bottom: 15px; 
+}
+
+.about-list {
+  font-size: 25px;
+}
+
+.skills-list {
+    font-size: 25px;
+}
