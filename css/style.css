@@ -190,3 +190,50 @@ body {
 .project-link:hover {
     background-color: #555;
 }
+
+/* Education & Experience Section */
+
+#education {
+    margin-top: 40px;
+    padding: 40px;
+    background-color: white;
+}
+
+#education h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+#education h3 {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+#education table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+#education th, #education td {
+    border: 1px solid #cecbcb;
+    padding: 14px 18px;
+    text-align: left;
+}
+
+#education th {
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#education tbody tr:hover {
+    background-color: #e8e8e8;
+}
