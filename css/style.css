@@ -8,6 +8,7 @@ body {
 
 #navbar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     background-color: gray;
@@ -31,13 +32,15 @@ body {
 .intro {
     min-height: 80vh;
     text-align: center;
-    margin: 90px;
+    margin: 90px auto;
     padding: 40px 20px 40px;
+    max-width: 900px;
 }
 
 .intro img {
-    width: 360px;
-    height: 360px;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
     border-radius: 50%;
     margin-top: 100px;
 }
@@ -160,7 +163,8 @@ body {
 }
 
 .project-card {
-    width: 430px;
+    width: 100%;
+    max-width: 430px;
     background-color: #ffffff;
     border: 1px solid #cecbcb;
     text-align: left;
@@ -305,6 +309,7 @@ body {
     font-size: 16px;
     font-family: Arial, sans-serif;
     transition: border-color 0.3s;
+    box-sizing: border-box;
 }
 
 .contact-form input:focus,
@@ -332,4 +337,250 @@ body {
 
 .send-btn:hover {
     background-color: #555;
+}
+
+
+/* Tablet - 768px and below */
+
+@media (max-width: 768px) {
+    .intro {
+        margin: 40px auto;
+        padding: 30px 20px;
+    }
+
+    .intro img {
+        max-width: 280px;
+        margin-top: 40px;
+    }
+
+    .intro h1 {
+        font-size: 36px;
+    }
+
+    .tagline {
+        font-size: 22px;
+        margin: 30px 0 20px;
+    }
+
+    .bio {
+        font-size: 20px;
+    }
+
+    #about, #skills, #projects, #education, #contact {
+        padding: 30px 20px;
+        font-size: 20px;
+    }
+
+    #skills h2, #projects h2, #education h2, #contact h2 {
+        font-size: 32px;
+    }
+
+    .skill-card h3 {
+        font-size: 24px;
+    }
+
+    .skill-card p {
+        font-size: 18px;
+    }
+
+    #education table {
+        font-size: 16px;
+    }
+
+    #education th, #education td {
+        padding: 10px 12px;
+    }
+}
+
+/* Mobile - 480px and below */
+
+@media (max-width: 480px) {
+    #navbar {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #navbar a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .intro {
+        margin: 20px auto;
+        min-height: auto;
+    }
+
+    .intro img {
+        max-width: 200px;
+        margin-top: 20px;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+
+    .tagline {
+        font-size: 18px;
+        margin: 20px 0 15px;
+    }
+
+    .bio {
+        font-size: 18px;
+    }
+
+    #about, #skills, #projects, #education, #contact {
+        padding: 20px 15px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    #skills h2, #projects h2, #education h2, #contact h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .skill-card {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .project-card img {
+        height: 180px;
+    }
+
+    .project-info h3 {
+        font-size: 20px;
+    }
+
+    #education th, #education td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+}
+
+
+/* Tablet - 768px and below */
+
+@media (max-width: 768px) {
+    .intro {
+        margin: 40px auto;
+        padding: 30px 20px;
+    }
+
+    .intro img {
+        max-width: 280px;
+        margin-top: 40px;
+    }
+
+    .intro h1 {
+        font-size: 36px;
+    }
+
+    .tagline {
+        font-size: 22px;
+        margin: 30px 0 20px;
+    }
+
+    .bio {
+        font-size: 20px;
+    }
+
+    #about, #skills, #projects, #education, #contact {
+        padding: 30px 20px;
+        font-size: 20px;
+    }
+
+    #skills h2, #projects h2, #education h2, #contact h2 {
+        font-size: 32px;
+    }
+
+    .skill-card h3 {
+        font-size: 24px;
+    }
+
+    .skill-card p {
+        font-size: 18px;
+    }
+
+    #education table {
+        font-size: 16px;
+    }
+
+    #education th, #education td {
+        padding: 10px 12px;
+    }
+}
+
+/* Mobile - 480px and below */
+
+@media (max-width: 480px) {
+    #navbar {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #navbar a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .intro {
+        margin: 20px auto;
+        min-height: auto;
+    }
+
+    .intro img {
+        max-width: 200px;
+        margin-top: 20px;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+
+    .tagline {
+        font-size: 18px;
+        margin: 20px 0 15px;
+    }
+
+    .bio {
+        font-size: 18px;
+    }
+
+    #about, #skills, #projects, #education, #contact {
+        padding: 20px 15px;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    #skills h2, #projects h2, #education h2, #contact h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .skill-card {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .project-card img {
+        height: 180px;
+    }
+
+    .project-info h3 {
+        font-size: 20px;
+    }
+
+    #education th, #education td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
 }
