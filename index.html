@@ -25,27 +25,31 @@
     </section>
     
     <section id="about">
-        <h2>About Me</h2>
-        
-        <h3>Short Biography</h3>
-        <p>Hello! I am Stephen Niño T. Roldan, an aspiring web developer passionate about creating clean, 
-            functional, and visually appealing web experiences. I love learning new technologies and exploring ways to solve problems through code.</p>
-        
-        <h3>Hobbies & Interests</h3>
-        <ul class="about-list">
-            <li>Coding and problem solving</li>
-            <li>Playing video games</li>
-            <li>Reading tech blogs and articles</li>
-        </ul>
+    <h2>About Me</h2>
 
-        <h3>Goals</h3>
-        <p>My primary goal is to become a full-stack web developer and contribute to open-source projects. 
-            I also aim to build web applications that make everyday tasks easier.</p>
+    <div class="skills-wrapper">
+        <div class="skill-card">
+            <h3>Short Biography</h3>
+            <p> I am Stephen Niño T. Roldan, a Computer Science student interested in web development and programming. I enjoy learning new technologies and solving problems through code.</p>
+        </div>
 
-        <h3>Academic Background</h3>
-        <p>I am a Computer Science student at Caraga State University with an interest in technology and software development. 
-            My studies allow me to explore programming, web development, databases, and other areas of computing while building practical skills for my future career. </p>    
-    </section>
+        <div class="skill-card">
+            <h3>Hobbies and Interests</h3>
+            <p>I enjoy coding, playing video games, and reading technology articles. These interests help me explore new ideas and improve my problem-solving skills. </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>My Goals</h3>
+            <p> My goal is to become a full-stack web developer, build useful web applications, and improve my programming skills through personal and collaborative projects. </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Academic Background</h3>
+            <p> I am currently pursuing a Bachelor of Science in Computer Science at Caraga State University, where I am developing my knowledge of programming, databases, and software development. </p>
+        </div>
+
+    </div>
+</section>
 
     <section id="skills">
     <h2>My Skills</h2>
@@ -206,21 +210,34 @@
         <h2>Contact Me</h2>
         <p>Feel free to reach out if you have any questions or want to work together.</p>
         <form class="contact-form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name">
+            <label for="name">Name</label> 
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
 
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
 
             <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Subject">
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
 
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
 
             <button type="submit" class="send-btn">Send</button>
         </form>
     </section>
+
+    <footer id="footer">
+    <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <p>&copy; 2026 Stephen Niño T. Roldan. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
